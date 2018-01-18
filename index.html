@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Safer India</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="icon" href="logo.png">
+	<style>
+	#myMap {
+		position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+	}
+	#loc_button {
+		position: fixed;
+		bottom: 85px;
+		right: 10px;
+		width: 28px;
+		height: 28px;
+		background: #fff;
+		font-size: 20px;
+		padding: 4px;
+		color: #666;
+		display: none;
+		cursor: pointer;
+	}
+	#loc_button:focus {
+		border:none;
+		outline: none;
+		color: #000;
+	}
+	</style>
+</head>
+<body>
+<div class="container-fluid bg-default" id="myMap"></div>
+<div class="container-fluid" id="alert_placeholder" style="position:fixed; bottom:-1rem;"></div>
+<button class="btn btn-sm material-icons" id="loc_button">my_location</button>
+<script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+<script src="https://cdn.firebase.com/libs/geofire/4.1.2/geofire.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+<script src="feelsafe.js"></script>
+<script type="text/javascript" src="https://maps.google.com/maps/api/js?key=AIzaSyCpgMd-lqRinW8lp8uAA0bicwdV4hauYm0&callback=getLocation"></script>
+</body>
+</html>
